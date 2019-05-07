@@ -6,6 +6,7 @@ bool IsUniq(std::string c) {
 		return false;
 	}
 	char result[256] = {};
+	
 	for (int i = 0; i < c.size(); ++i) {
 		++result[c[i]];
 		if (result[c[i]] > 1) {
